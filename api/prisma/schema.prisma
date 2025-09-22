@@ -17,28 +17,26 @@ model Perfil{
 model Usuario {
   id        Int      @id @default(autoincrement())
   senha     String
-  perfil Int
-  perfilr Perfil @relation(fields: [perfil], references: [id])
+  perfil    Int
+  perfilr   Perfil   @relation(fields: [perfil], references: [id])
 }
 
 model Equipamento {
-  id        Int      @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   equipamento String
-  imagem String
-  descricao String @db.Text
-  ativo Boolean 
-  data DateTime @default(now())
+  imagem      String
+  descricao   String   @db.Text
+  ativo       Boolean 
+  data        DateTime @default(now())
   comentarios Comentario[]
 }
 
 model Comentario{
-  id       Int      @id @default(autoincrement())
-  comentario String
-  equipamento Int
-  perfil Int
-  data DateTime @default(now())
+  id           Int         @id @default(autoincrement())
+  comentario   String
+  equipamento  Int
+  perfil       Int
+  data         DateTime    @default(now())
   equipamentor Equipamento @relation(fields: [equipamento], references: [id])
-  perfilr Perfil @relation(fields: [perfil], references: [id])
+  perfilr      Perfil      @relation(fields: [perfil], references: [id])
 }
-
-

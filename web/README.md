@@ -1,4 +1,4 @@
-# Techman Web
+# Techman2025 Web
 
 ## Tecnologias Utilizadas
 - HTML  
@@ -10,7 +10,7 @@
 
 1. Acesse a pasta `web`:
    ```bash
-   cd techman/web
+   cd techman2025/web
    ```
 2. Abra o arquivo index.html diretamente no navegador (Chrome recomendado)
 ou utilize a extensão Live Server no VS Code para rodar em ambiente local.

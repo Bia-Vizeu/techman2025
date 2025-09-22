@@ -23,3 +23,13 @@ O sistema deve oferecer:
 ![Diagrama de Atividades](./docs/atividade_inclusao_equipamento.png)
 
 ---
+
+## Prints das Telas
+
+### 1. Tela de Login
+![login](./docs/telalogin.png)
+
+### 2. Tela Inicial
+![Home](./docs/home.png)
+
+---

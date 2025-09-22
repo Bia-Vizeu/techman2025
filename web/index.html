@@ -1,28 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TECHMAN - Login</title>
-  <link rel="stylesheet" href="style/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechMan - Login</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <span class="tech">TECH</span><span class="man">MAN</span>
-    </div>
-    
-    <div class="login-box">
-      <input type="password" id="password" readonly value="">
-      <div class="keyboard">
-        <button>1</button><button>2</button><button>3</button>
-        <button>4</button><button>5</button><button>6</button>
-        <button>7</button><button>8</button><button>9</button>
-        <button>C</button><button>0</button><button>⏎</button>
-      </div>
-    </div>
-  </div>
+  <main class="page">
+    <header class="brand">
+      <div class="brand-box">TECH<span class="accent">MAN</span></div>
+    </header>
 
-  <script src="script.js"></script>
+    <section class="login-card" aria-label="Login">
+      <div class="pwd-display" id="pwdDisplay">------</div>
+
+      <div class="keyboard" id="keyboard" role="group" aria-label="Teclado numérico">
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+
+        <button class="key key-clear" id="btnClear">C</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key key-enter" id="btnEnter" aria-disabled="true" disabled>⤶</button>
+      </div>
+
+      <div id="errorMsg" class="error" role="alert" aria-live="assertive" hidden>ERRO: Senha incorreta.</div>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
 </body>
 </html>
